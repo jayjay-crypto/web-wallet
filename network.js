@@ -1,29 +1,29 @@
 export default {
-  id: 'bitcanna-1',
-  name: 'BitCanna',
+  id: 'microtick-1',
+  name: 'Microtick',
   description:
-    'BitCanna provides a decentralized payment network for the legal cannabis industry, by means of the BitCanna Coin (BCNA).',
+    "Microtick's core technology creates a market microstructure in which cooperative (assert / insure) quotes combine to replace traditional competitive (bid / ask) market orders, resulting in a more stable price discovery process",
   logo: `logo.svg`,
-  website: 'https://www.bitcanna.io',
+  website: 'https://www.microtick.com',
   apiURL: 'https://lcd.bitcanna.io',
-  rpcURL: 'https://rpc.bitcanna.io',
-  explorerURL: 'https://cosmos-explorer.bitcanna.io',
-  bitcannaExplorerURL: 'https://explorer.bitcanna.io',
-  exchangeApiUrl: 'https://swap.bitcanna.io',
-  osmosAppUrl: 'https://app.osmosis.zone',
+  rpcURL: 'https://rpc-explorer.microtick.zone/',
+  explorerURL: 'https://explorer.microtick.zone/',
+  bitcannaExplorerURL: 'https://explorer.microtick.zone/',
+  //exchangeApiUrl: 'https://swap.bitcanna.io',
+  //osmosAppUrl: 'https://app.osmosis.zone',
   // minBlockHeight: 5200792, // actually 5200791, but it has the wrong block time.
-  stakingDenom: 'BCNA',
+  stakingDenom: 'TICK',
   coinLookup: [
     {
-      viewDenom: 'BCNA',
-      chainDenom: 'ubcna',
+      viewDenom: 'TICK',
+      chainDenom: 'utick',
       chainToViewConversionFactor: 1e-6,
       icon: `currencies/bcna.jpg`,
     },
   ],
-  addressPrefix: 'bcna',
-  validatorAddressPrefix: 'bcnavaloper',
-  validatorConsensusaddressPrefix: 'bcnavalcons', // needed to map validators from staking queries to the validator set
+  addressPrefix: 'micro',
+  validatorAddressPrefix: 'microvaloper',
+  validatorConsensusaddressPrefix: 'microvalcons', // needed to map validators from staking queries to the validator set
   HDPath: `m/44'/118'/0'/0/0`,
   lockUpPeriod: `21 days`,
   fees: {
@@ -31,13 +31,13 @@ export default {
       gasEstimate: 800000,
       feeOptions: [
         {
-          denom: 'BCNA',
+          denom: 'TICK',
           amount: 0.01,
         },
       ],
     },
   },
   icon: `https://lunie.fra1.digitaloceanspaces.com/network-icons/cosmos.png`,
-  swapEnabled: true,
+  swapEnabled: false,
   localSigning: false, // this is only to be used as a developer tool - never deployed in production or for mainnet chains
 }
