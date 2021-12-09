@@ -5,7 +5,7 @@ export default {
     "Microtick's core technology creates a market microstructure in which cooperative (assert / insure) quotes combine to replace traditional competitive (bid / ask) market orders, resulting in a more stable price discovery process",
   logo: `logo.svg`,
   website: 'https://www.microtick.com',
-  apiURL: 'https://lcd.bitcanna.io',
+  apiURL: 'https://http://45.79.207.112:1317',
   rpcURL: 'https://rpc-explorer.microtick.zone/',
   explorerURL: 'https://explorer.microtick.zone/',
   bitcannaExplorerURL: 'https://explorer.microtick.zone/',
